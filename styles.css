@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+[data-type="CollectionFolder"] .cardText {
+  display: none;
+}
+
+.sectionTabs {
+  width: fit-content;
+  background: transparent;
+  top: 2.8px;
+  position: absolute;
+  margin-inline: auto;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.sectionTitleTextButton > .material-icons {
+  display: none;
+}
+
+.card[data-type="Movie"] .cardText.cardTextCentered.cardText-first {
+  display: none;
+}
+
+.card[data-type="Movie"] .cardText.cardTextCentered.cardText-secondary {
+  display: none;
+}
+
+.sidebarHeader {
+  display: none;
+}
+
+.paper-icon-button-light:hover:not(:disabled) {
+  color: #ffffff;
+  background-color: rgb(229, 9, 20, 0.3);
+}
+
+.actionsheetDivider {
+  display: none;
+}
+
+.countIndicator, .fullSyncIndicator, .mediaSourceIndicator, .playedIndicator {
+  background: rgb(229, 9, 20);
+}
+
+.button-flat:hover {
+  color: rgb(229, 9, 20);
+}
+
+.detailRibbon {
+  background: transparent;
+}
+
+.noBackdropTransparency .detailPageSecondaryContainer {
+  background: transparent;
+}
+
+.alphaPicker-fixed-right {
+  display: none;
+}
+
+.sectionTitle {
+  font-weight: 600;
+}
+
+.emby-tab-button:hover {
+  color: rgb(229, 9, 20);
+}
+
+.playstatebutton-icon-played {
+  color: rgb(229, 9, 20);
+}
+
+.defaultCardBackground2, .defaultCardBackground1, .defaultCardBackground3, .defaultCardBackground4, .defaultCardBackground5 {
+  background-color: rgb(229, 9, 20, 0.3);
+}
+
+.listItem[data-type="Episode"] {
+  padding-bottom: 0;
+  margin-bottom: 1.5rem;
+}
+
+.listItem[data-type="Episode"]:hover {
+  background: transparent;
+}
+
+.detailSection {
+  padding-bottom: 4rem;
+}
+
+.detailSectionContent {
+  margin-block: 3rem;
+}
+
+.tagline {
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+
+@media (max-height: 31.25em) {
+  .itemBackdrop {
+    min-height: 100vh;
+  }
+}
+
+@media (min-height: 31.25em) {
+  [dir=ltr] .padded-right-withalphapicker {
+    padding-right: 3.3%;
+    padding-right: max(env(safe-area-inset-right), 3.3%);
+  }
+}
