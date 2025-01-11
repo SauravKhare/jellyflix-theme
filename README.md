@@ -1,1 +1,1 @@
-Paste this link in custom CSS input to apply the theme: https://cdn.jsdelivr.net/gh/SauravKhare/jellyflix-theme@refs/heads/master/styles.css
+Paste this link in custom CSS input to apply the theme: [https://cdn.jsdelivr.net/gh/SauravKhare/jellyflix-theme@refs/heads/master/styles.css](https://cdn.jsdelivr.net/gh/SauravKhare/jellyflix-theme@master/styles.css)
