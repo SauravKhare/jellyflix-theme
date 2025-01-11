@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+/**** RESET ****/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/**** STYLES ****/
+
 body {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
@@ -103,6 +143,52 @@ body {
   font-style: italic;
 }
 
+.itemBackdrop {
+  display: none;
+}
+
+.detailPageWrapperContainer {
+  margin-top: 21rem;
+}
+
+.itemGenres {
+  display: none;
+}
+
+.itemGenres :not(:empty) {
+  display: block;
+}
+
+.detailSectionContent {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.tagline {
+  margin-bottom: 1rem;
+}
+
+.detail-clamp-text {
+  margin-bottom: 2rem;
+}
+
+.mediaInfoOfficialRating {
+  background: rgb(229, 9, 20);
+}
+
+.parentName {
+  font-size: 3rem;
+}
+
+.itemName.parentNameLast {
+  font-size: 3rem;
+}
+
+.paper-icon-button-light:hover:not(:disabled) {
+  color: rgb(229, 9, 20);
+  background-color: none;
+}
+
 @media (max-height: 31.25em) {
   .itemBackdrop {
     min-height: 100vh;
@@ -113,5 +199,11 @@ body {
   [dir=ltr] .padded-right-withalphapicker {
     padding-right: 3.3%;
     padding-right: max(env(safe-area-inset-right), 3.3%);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .paper-icon-button-light:hover:not(:disabled) {
+    background-color: transparent;
   }
 }
