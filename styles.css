@@ -189,6 +189,10 @@ body {
   background-color: none;
 }
 
+.itemProgressBarForeground {
+  background-color: rgb(229, 9, 20, 1);
+}
+
 @media (max-height: 31.25em) {
   .itemBackdrop {
     min-height: 100vh;
